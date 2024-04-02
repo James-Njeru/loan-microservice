@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "928cb411-a764-4e06-95dd-ef4ccce8b282",
+		"name": "RESTful Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23712485"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8765/registration-service/api/v1/register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Mercy\",\r\n    \"email\":\"mercy@gmail.com\",\r\n    \"phonenumber\":\"123456789\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/registration-service/api/v1/register-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"registration-service",
+						"api",
+						"v1",
+						"register-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8765/loan-service/api/v1/request-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1,\r\n    \"amount\":500,\r\n    \"purpose\":\"morgage\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/loan-service/api/v1/request-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"loan-service",
+						"api",
+						"v1",
+						"request-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8765/loan-service/api/v1/loan-payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loanId\":1,\r\n    \"amount\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/loan-service/api/v1/loan-payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"loan-service",
+						"api",
+						"v1",
+						"loan-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8765/repayment-service/api/v1/payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loanId\":1,\r\n    \"amount\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/repayment-service/api/v1/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"repayment-service",
+						"api",
+						"v1",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8765/account-service/api/v1/loan-balance/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/account-service/api/v1/loan-balance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"account-service",
+						"api",
+						"v1",
+						"loan-balance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
